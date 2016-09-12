@@ -1,0 +1,6 @@
+c:\users\revotech\documents\visual studio 2015\Projects\MethodsOfAlgorithm\MethodsOfAlgorithm\bin\Debug\MethodsOfAlgorithm.exe.config
+C:\Users\Revotech\documents\visual studio 2015\Projects\MethodsOfAlgorithm\MethodsOfAlgorithm\bin\Debug\MethodsOfAlgorithm.exe
+C:\Users\Revotech\documents\visual studio 2015\Projects\MethodsOfAlgorithm\MethodsOfAlgorithm\bin\Debug\MethodsOfAlgorithm.pdb
+C:\Users\Revotech\documents\visual studio 2015\Projects\MethodsOfAlgorithm\MethodsOfAlgorithm\obj\Debug\MethodsOfAlgorithm.csprojResolveAssemblyReference.cache
+C:\Users\Revotech\documents\visual studio 2015\Projects\MethodsOfAlgorithm\MethodsOfAlgorithm\obj\Debug\MethodsOfAlgorithm.exe
+C:\Users\Revotech\documents\visual studio 2015\Projects\MethodsOfAlgorithm\MethodsOfAlgorithm\obj\Debug\MethodsOfAlgorithm.pdb
