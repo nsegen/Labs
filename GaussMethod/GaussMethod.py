@@ -16,7 +16,7 @@ def input_matrix():
     n = int(input())
     matrix = []
     for i in range(n):
-        matrix.append([int(j) for j in input().split()])
+        matrix.append([float(j) for j in input().split()])
     return matrix
 
 
@@ -74,9 +74,11 @@ def solve(a):
 def print_matrix(matr):
     for i in range(len(matr)):
         print(str(matr[i]), ' ')
+    print("")
 
 
 matrix = input_matrix()
 print(matrix)
 solve(matrix)
-print(solve(matrix))
+newMatr = solve(matrix)
+print_matrix(newMatr)
