@@ -1,10 +1,9 @@
 package by.bsu.mmf.nsegen.application;
 
-import by.bsu.mmf.nsegen.collections.IList;
-import by.bsu.mmf.nsegen.collections.IStack;
-import by.bsu.mmf.nsegen.collections.MyLinkedList;
-import by.bsu.mmf.nsegen.collections.MyStack;
+import by.bsu.mmf.nsegen.collections.*;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -116,6 +115,39 @@ public class Runner {
                     }
                     System.out.println();
                     break;
+            }
+        }
+
+        List<Integer> listTree = new LinkedList<>();
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            listTree.add(sc.nextInt());
+        }
+
+        ITree<Integer> tree = new Tree<>(listTree);
+        tree.printTree();
+
+        int ch=1;
+        String[] a = sc.nextLine().split(" ");
+        while (ch != 0) {
+            System.out.println("1 - print tree\n 2 - pre Order Traversal\n 3 - in Order Traversal\n 4 - post Order Traversal\n 0 -exit  ");
+            ch =sc.nextInt();
+            switch (ch) {
+                case 1:
+                    tree.printTree();
+                    break;
+                case 2:
+                    tree.directBypass();
+                    break;
+                case 3:
+                    tree.balancedBypass();
+                    break;
+                case 4:
+                    tree.reverseBypass();
+                    break;
+                case 0:
+                    return;
+
             }
         }
 
