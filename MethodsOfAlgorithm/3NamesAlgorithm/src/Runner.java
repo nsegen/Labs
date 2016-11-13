@@ -19,6 +19,7 @@ public class Runner {
         int n = t.length;
         int m = p.length;
         int[] pi = computePrefixFunction(p);
+        System.out.println(Arrays.toString(pi));
         int q = 0;
         for (int i = 0; i < n; i++) {
             while(q>0 && p[q] != t[i]) {
