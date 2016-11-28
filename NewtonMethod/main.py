@@ -1,36 +1,31 @@
-from math import log
-
-
-def dx(f, x):
-    return abs( 0 -f(x))
-
-
-def newtons_method(f, df, x0, e):
-    delta = dx(f, x0)
-    while delta > e:
-        x0 = x0 - f(x0 ) /df(x0)
-        delta = dx(f, x0)
-    print('Root is at: ', x0)
-    print('f(x) at root is: ', f(x0))
-
 # функция
-def F(x):
-    return 0.1 * pow(x, 2) - x * log(x)
+def f(x):
+    return pow(x, 3) - 3 * pow(x, 2) - 14 * x - 8
 
 
 # производная
-def F1(x):
-    return 0.2 * x - log(x) - 1
+def f_der_1(x):
+    return 3 * pow(x, 2) - 6 * x - 14
 
 
-def Method(a, b):
+def f_der_2(x):
+    return 6 * x - 6
+
+
+def newton_method(a, b):
+    current = -2.5
+    current0 = f(current)
+    eps = pow(10.0, -3.0) / 2.0
     try:
-        x0 = (a + b) / 2
-        xn = F(x0)
-        xn1 = xn - F(xn) / F1(xn)
-        while abs(xn1 - xn) > pow(10, -5):
-            xn = xn1  # вот так надо было
-            xn1 = xn - F(xn) / F1(xn)
-        return xn1
+        if f(current) * f_der_2(current) > 0 and f(a) * f(b) < 0:
+            while True:
+                previous = current
+                current = previous - ((b - previous) * f(previous)) / (f(b) - f(previous))
+                if abs(current - previous) < eps:
+                    break
     except ValueError:
         print("Value not invalidate")
+
+    return current
+
+print(newton_method(-3, -1.9))
