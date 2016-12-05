@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../iterationMethodForEquation/.idea/iterationMethod.iml" filepath="$PROJECT_DIR$/../iterationMethodForEquation/.idea/iterationMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/iterationMethod.iml" filepath="$PROJECT_DIR$/.idea/iterationMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/iterationMethodForEquation.iml" filepath="$PROJECT_DIR$/.idea/iterationMethodForEquation.iml" />
     </modules>
   </component>
 </project>
