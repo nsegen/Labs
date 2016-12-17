@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HunAlgorithm.iml" filepath="$PROJECT_DIR$/HunAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/KhunAlgorithm.iml" filepath="$PROJECT_DIR$/.idea/KhunAlgorithm.iml" />
     </modules>
   </component>
 </project>
