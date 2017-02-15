@@ -4,9 +4,9 @@ def lazy_algorithm(graph):
     min_coating = set()
     while len(edges):
         edge = edges.pop()
-        # print(edges, edge, min_coating)
-        min_coating.add(edge[0])
+        min_coating |= {edge[0], edge[1]}
         edges = set(filter(lambda e: e[0] != edge[0] and e[0] != edge[1] and e[1] != edge[0] and e[1] != edge[1], edges))
+        print(edges, edge, min_coating)
     return len(min_coating)
 
 
