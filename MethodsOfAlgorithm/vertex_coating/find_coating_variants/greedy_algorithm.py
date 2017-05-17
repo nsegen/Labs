@@ -1,10 +1,6 @@
 
 def greedy_algorithm(graph):
-    result = 0
-    for vertex in min_coating(graph):
-        # print(vertex)
-        result += 1
-    return result
+    return len(min_coating(graph))
 
 
 def min_coating(graph):

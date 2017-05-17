@@ -12,7 +12,7 @@ def is_coating(graph, vertexes):
     edges = {get_edge(v1, v2) for v1 in graph for v2 in graph[v1]}
     for edge in edges:
         for vertex in vertexes:
-            if vertex == edge[0] or vertex == edge[1]:
+            if vertex in edge:
                 break
         else:
             return False
@@ -20,9 +20,7 @@ def is_coating(graph, vertexes):
 
 
 def get_edge(v1, v2):
-    edge = [v1, v2]
-    edge.sort()
-    return edge[0], edge[1]
+    return tuple(sorted((v1, v2)))
 
 
 def get_sub_vertexes(vertexes, vertex):

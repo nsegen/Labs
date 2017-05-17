@@ -5,10 +5,10 @@ import copy
 import time
 
 graph = {}
-edge = 1
+vertex = 1
 for i in open('input').readlines():
-    graph[edge] = [int(x) for x in i.split(' ')]
-    edge += 1
+    graph[vertex] = [int(x) for x in i.split(' ')]
+    vertex += 1
 print(graph)
 
 start = time.time()
