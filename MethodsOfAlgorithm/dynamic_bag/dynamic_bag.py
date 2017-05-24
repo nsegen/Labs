@@ -1,5 +1,5 @@
 n = int(input('Enter n: '))
-temp = list(map(lambda d: (int(d.split('/')[0]), int(d.split('/')[1])), input().split(' ')))
+temp = list(map(lambda d: (int(d.split('/')[0]), int(d.split('/')[1])), input('Enter w/p list: ').split(' ')))
 w, p = zip(*temp)
 W = int(input('Enter W: '))
 
